@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+ 
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <button id="applyButton">Take Appointment Now</button>
+    <div class="formContainer">
+        <div id="formContainer" ></div>
+</div>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta similique non modi maxime ab expedita veritatis laborum itaque ut. Dolore illo quae fugiat tenetur repellat iusto nam provident iste modi.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis placeat a, modi distinctio minus necessitatibus cupiditate. Doloremque dignissimos iure repellat consequatur quam voluptatibus. Odio pariatur aliquid fuga nesciunt, sapiente tenetur?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, ea. Praesentium nihil quibusdam cupiditate nostrum dolores fuga voluptatibus, facilis asperiores repudiandae quo cumque voluptas in laborum maxime iste nisi commodi!</p>
+<script>
+ 
+    const formUrl = 'https://forms.office.com/r/2QK0t4eETH';
+    const formContainer = document.getElementById('formContainer');
+    const applyButton = document.getElementById('applyButton');
+
+    function loadForm() {
+        
+        formContainer.innerHTML = `<iframe src="${formUrl}" type “align=center" width="40%" height="600px" frameborder="2px" marginheight="0" marginwidth="0" class="formContainer">Loading...</iframe>`;
+    }
+
+    applyButton.addEventListener('click', loadForm);
+</script>
+  </div>
+</body>
+</html>
